@@ -12,6 +12,7 @@ interface Styles {
     backgroundColor: string;
     padding: string;
     borderRadius: string;
+    transition: string;
   };
   baseBarContainer: {
     width: string;
@@ -55,6 +56,7 @@ const styles: Styles = {
     backgroundColor: "green",
     borderRadius: "2rem",
     padding: "0.4rem",
+    transition: "width 0.5s",
   },
   baseBarContainer: {
     width: "calc(100% - 1.2rem)",
