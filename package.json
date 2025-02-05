@@ -1,42 +1,31 @@
 {
-  "name": "progress-indicator",
-  "version": "0.1.0",
+  "name": "react-progress",
   "description": "progress-indicator is a React component which helps implement a progress bar component.",
-  "private": true,
-  "dependencies": {
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "cra-template": "1.2.0",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1"
+    "react-dom": "^19.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "babel src -d dist",
-    "prepublishOnly": "npm run build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "keywords": [
+    "progress indicator",
+    "progress bar",
+    "react progress indicator",
+    "react progress bar"
+  ],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "web-vitals": "^4.2.4"
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "typescript": "^5.7.3"
   }
 }

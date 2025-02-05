@@ -5,6 +5,7 @@ interface ProgressIndicator {
   barStyle?: object;
   barContainerStyle?: object;
   percentageTextStyle?: object;
+  percentText?: string;
 }
 
 interface Styles {
@@ -21,7 +22,7 @@ interface Styles {
     borderRadius: string;
   };
   percentageText: {
-    textAlign: string;
+    textAlign: any;
   };
 }
 
@@ -30,6 +31,7 @@ const ProgressIndicator = ({
   barStyle = {},
   barContainerStyle = {},
   percentageTextStyle = {},
+  percentText = "",
 }: ProgressIndicator) => {
   return (
     <>
@@ -45,7 +47,9 @@ const ProgressIndicator = ({
         ></div>
       </div>
       <p style={{ ...styles.percentageText, ...percentageTextStyle }}>
-        {percentage >= 100 ? 100 : percentage <= 0 ? 0 : percentage}%
+        {percentText
+          ? percentText
+          : `${percentage >= 100 ? 100 : percentage <= 0 ? 0 : percentage}%`}
       </p>
     </>
   );
