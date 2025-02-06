@@ -1,9 +1,13 @@
 {
-  "name": "react-progress",
-  "description": "progress-indicator is a React component which helps implement a progress bar component.",
-  "version": "1.0.0",
+  "name": "progress-indicator-react",
+  "description": "progress-indicator-react is a React component which helps implement a progress bar component.",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sahilsaxena9711/progress-indicator.git"
+  },
   "files": [
     "dist"
   ],
@@ -19,6 +23,7 @@
     "progress indicator",
     "progress bar",
     "react progress indicator",
+    "progress indicator react",
     "react progress bar"
   ],
   "author": "",
