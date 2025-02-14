@@ -10,7 +10,7 @@ npm i progress-indicator-react
 
 ## Usage
 
--Import Blacked
+-Import ProgressIndicator
 
 ```
  import ProgressIndicator from 'progress-indicator-react';
